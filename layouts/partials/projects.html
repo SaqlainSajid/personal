@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <!-- Navbar (Your existing code) -->
+  <div class="row pt-10 bg-primary vh-100">
+    <!-- Left column with blue background -->
+    <div
+      class="col-md-8 bg-primary p-md-5 d-flex align-items-center justify-content-center"
+    >
+      <span class="h1 text-white p-5">{{.Content}}</span>
+    </div>
+    <!-- Right column with big image -->
+    <div class="col-md-4 bg-primary p-md-5 mt-4">
+      <img src="{{ "images/big.png" | absURL }}" alt="Big Image" width="400"
+      height="400" class="img-fluid" />
+    </div>
+  </div>
+</div>
