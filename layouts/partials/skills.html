@@ -1,16 +1,64 @@
 <div class="container-fluid">
   <!-- Navbar (Your existing code) -->
-  <div class="row pt-10 bg-white vh-100">
-    <!-- Left column with blue background -->
-    <div
-      class="col-md-8 bg-white p-md-5 d-flex align-items-center justify-content-center"
+  <div
+    class="row pt-10 bg-white vh-100 d-flex align-items-center justify-content-center"
+  >
+    <span
+      class="h1 text-primary p-1 d-flex align-items-center justify-content-center"
+      >My Skills</span
     >
-      <span class="h1 text-primary p-5">{{.Content}}</span>
-    </div>
-    <!-- Right column with big image -->
-    <div class="col-md-4 bg-white p-md-5 mt-4">
-      <img src="{{ "images/big.png" | absURL }}" alt="Big Image" width="400"
-      height="400" class="img-fluid" />
+    <!-- Centered Container for Images -->
+    <div
+      class="col-md-8 bg-white p-md-5 d-flex align-items-center justify-content-center flex-wrap overflow-hidden"
+    >
+      <!-- First Row of Cards -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow p-3">
+            <img src="{{ "images/html5.jpg" | absURL }}" alt="HTML5"
+            class="card-img-top img-fluid square-image object-fit-scale
+            bg-white" style="height: 150px; width:150px" />
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow p-3">
+            <img src="{{ "images/css3.png" | absURL }}" alt="CSS3"
+            class="card-img-top img-fluid square-image object-fit-scale"
+            style="height: 150px; width:150px" />
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card custom-shadow p-3">
+            <img src="{{ "images/js.jpg" | absURL }}" alt="JavaScript"
+            class="card-img-top img-fluid square-image" style="height: 150px;
+            width:150px" />
+          </div>
+        </div>
+      </div>
+      <!-- Second Row of Cards -->
+      <div class="row">
+        <div class="col-md-4 mb-1">
+          <div class="card custom-shadow p-3">
+            <img src="{{ "images/bs.png" | absURL }}" alt="Bootstrap"
+            class="card-img-top img-fluid square-image object-fit-scale"
+            style="height: 150px; width:150px"/>
+          </div>
+        </div>
+        <div class="col-md-4 mb-1">
+          <div class="card custom-shadow p-3">
+            <img src="{{ "images/react.png" | absURL }}" alt="React"
+            class="card-img-top img-fluid square-image object-fit-scale"
+            style="height: 150px; width:150px"/>
+          </div>
+        </div>
+        <div class="col-md-4 mb-1">
+          <div class="card custom-shadow p-3">
+            <img src="{{ "images/git.png" | absURL }}" alt="Git"
+            class="card-img-top img-fluid square-image object-fit-scale"
+            style="height: 150px; width:150px"/>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
