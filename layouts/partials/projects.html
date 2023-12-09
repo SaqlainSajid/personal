@@ -1,64 +1,68 @@
-<div class="container-fluid">
-  <!-- Navbar (Your existing code) -->
-  <div class="row pt-1 bg-primary vh-100">
-    <!-- Centered Container for Cards -->
+<div class="container-fluid" id="projects">
+  <div
+    class="row pt-10 bg-primary vh-200 d-flex align-items-center justify-content-center"
+  >
     <span
-      class="h1 text-white p-1 d-flex align-items-center justify-content-center"
+      class="h1 text-white p-1 pt-4 d-flex align-items-center justify-content-center"
       >Recent Projects</span
     >
-    <div
-      class="col-md-8 mx-auto bg-primary p-md-2 d-flex align-items-center justify-content-center"
-    >
-      <!-- First Card -->
-      <div
-        class="card text-primary bg-white mb-5 d-flex align-items-center justify-content-center custom-shadow"
-        style="max-width: 18rem; width: 200px"
-      >
-        <img src="{{ "images/pro.jpg" | absURL }}" alt="Profile Pic" width="180"
-        height="20" class="img-fluid p-2" />
-        <div class="card-body">
-          <p class="card-text">Project 1</p>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-            doloribus!
-          </p>
-          <button class="btn btn-primary text-white">Check it out</button>
-        </div>
+    <div class="row row-cols-2 row-cols-md-3 g-5">
+      <div class="col">
+        <a
+          href="https://github.com/"
+          class="card-link"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <div class="card h-100 custom-shadow border-0">
+            <img src="{{ "images/title.jpeg" | absURL }}" class="card-img-top"
+            alt="..."/>
+            <div class="card-body">
+              <h5 class="card-title">Mind Space</h5>
+              <p class="card-text">
+                Working on making a mobile app for a mental health organization
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
-
-      <!-- Second Card -->
-      <div
-        class="card text-primary bg-white mb-5 ms-3 me-3 d-flex align-items-center justify-content-center custom-shadow"
-        style="max-width: 18rem; width: 200px"
-      >
-        <img src="{{ "images/pro.jpg" | absURL }}" alt="Profile Pic" width="180"
-        height="20" class="img-fluid p-2" />
-        <div class="card-body">
-          <p class="card-text">Project 2</p>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-            doloribus!
-          </p>
-          <button class="btn btn-primary text-white">Check it out</button>
-        </div>
+      <div class="col">
+        <a
+          href="https://github.com/"
+          class="card-link"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <div class="card h-100 custom-shadow border-0">
+            <img src="{{ "images/title.jpeg" | absURL }}" class="card-img-top"
+            alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Resume Database</h5>
+              <p class="card-text">
+                A resume Database Website for Ada's Developers
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
-
-      <!-- Third Card -->
-      <div
-        class="card text-primary bg-white mb-5 d-flex align-items-center justify-content-center custom-shadow"
-        style="max-width: 18rem; width: 200px"
-      >
-        <img src="{{ "images/pro.jpg" | absURL }}" alt="Profile Pic" width="180"
-        height="20" class="img-fluid p-2" />
-        <div class="card-body">
-          <p class="card-text">Project 3</p>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-            doloribus!
-          </p>
-          <button class="btn btn-primary text-white">Check it out</button>
-        </div>
+      <div class="col">
+        <a
+          href="https://github.com/"
+          class="card-link"
+          target="_blank"
+          style="text-decoration: none"
+        >
+          <div class="card h-100 custom-shadow border-0">
+            <img src="{{ "images/title.jpeg" | absURL }}" class="card-img-top"
+            alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Game Discovery Website</h5>
+              <p class="card-text">A clone of rawg.io</p>
+            </div>
+          </div>
+        </a>
       </div>
+      <div class="col"></div>
     </div>
   </div>
 </div>
